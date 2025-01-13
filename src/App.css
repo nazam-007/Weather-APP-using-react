@@ -1,0 +1,114 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
+  font-family: Arial, sans-serif;
+}
+
+/* Wrapper for weather info */
+.weather-app {
+  
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  text-align: center;
+}
+
+/* City name and country */
+.city-name h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+  color: #2c3e50;
+}
+
+.city-name span {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Date */
+.date span {
+  font-size: 0.9rem;
+  color: #34495e;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Weather data */
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.weather-info > div {
+  flex: 1;
+  text-align: center;
+}
+
+.weather-info p {
+  margin: 5px 0;
+}
+
+/* Temperature */
+.weather-temp {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #e74c3c;
+}
+
+/* Weather description */
+.description {
+  font-size: 1rem;
+  font-style: italic;
+  color: #2980b9;
+  margin-top: 10px;
+}
+
+/* Wind and humidity info */
+.weather-info .wind,
+.weather-info .humidity {
+  font-size: 1.2rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Search box */
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: calc(100% - 100px);
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+}
+
+.search-box button {
+  padding: 10px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-box button:hover {
+  background-color: #2980b9;
+}
+
+/* Loader */
+.loading {
+  font-size: 1.5rem;
+  color: #e67e22;
+}
